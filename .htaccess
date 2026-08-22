@@ -1,0 +1,18 @@
+RewriteEngine On
+
+Options -Indexes
+
+# Raiz -> Inicio
+RewriteRule ^$ pages/index.php [L]
+
+# Detalle de un proyecto: /portafolio/mi-proyecto -> pages/portafolio-detalle.php?slug=mi-proyecto
+RewriteRule ^portafolio/([a-zA-Z0-9-]+)/?$ pages/portafolio-detalle.php?slug=$1 [L,QSA]
+
+# Paginas: /servicios -> pages/servicios.php, /nosotros -> pages/nosotros.php, etc.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-z-]+)/?$ pages/$1.php [L,QSA,NC]
+
+# Si alguien entra directo a /pages/servicios.php, redirige a la URL amigable /servicios
+RewriteCond %{THE_REQUEST} \s/+pages/([a-z-]+)\.php[\s?] [NC]
+RewriteRule ^ /%1? [R=301,L]

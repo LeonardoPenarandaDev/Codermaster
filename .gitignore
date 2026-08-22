@@ -1,0 +1,4 @@
+/config/database.php
+/.claude/
+Thumbs.db
+.DS_Store
