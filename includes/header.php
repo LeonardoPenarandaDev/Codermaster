@@ -43,6 +43,8 @@ $currentUrlPath = $currentPath === '' ? '/' : '/' . $currentPath;
 ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?>
 </script>
 <link rel="icon" href="<?= e(site_url('/assets/img/favicon.svg')) ?>" type="image/svg+xml">
+<link rel="icon" href="<?= e(site_url('/assets/img/logo.png')) ?>" type="image/png">
+<link rel="apple-touch-icon" href="<?= e(site_url('/assets/img/logo.png')) ?>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -51,7 +53,9 @@ $currentUrlPath = $currentPath === '' ? '/' : '/' . $currentPath;
 <body>
 <header class="site-header">
   <div class="container header-inner">
-    <a href="<?= e(site_url('/')) ?>" class="logo">Coder<span>Master</span></a>
+    <a href="<?= e(site_url('/')) ?>" class="logo">
+      <img src="<?= e(site_url('/assets/img/logo.png')) ?>" alt="CoderMaster" class="logo-img">
+    </a>
 
     <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">
       <span></span><span></span><span></span>
