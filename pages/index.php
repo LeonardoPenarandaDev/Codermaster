@@ -1,6 +1,6 @@
 <?php
-$pageTitle = 'Diseño Web y Apps Laravel en Colombia';
-$pageDescription = 'Diseño web y desarrollo de aplicaciones con Laravel en Colombia. CoderMaster crea soluciones digitales a medida para tu negocio.';
+$pageTitle = 'Diseño Web en Cúcuta, Los Patios y Norte de Santander';
+$pageDescription = 'Diseño y desarrollo de páginas web y aplicaciones con Laravel en Cúcuta, Los Patios y Norte de Santander. CoderMaster crea soluciones digitales a medida para tu negocio.';
 require __DIR__ . '/../includes/header.php';
 
 $proyectos = require __DIR__ . '/../data/proyectos.php';
@@ -11,9 +11,9 @@ $clientes = require __DIR__ . '/../data/clientes.php';
 <section class="hero">
   <div class="container hero-inner">
     <div>
-      <span class="eyebrow">Diseño web &amp; aplicaciones a medida</span>
+      <span class="eyebrow">Diseño web en Cúcuta, Los Patios y Norte de Santander</span>
       <h1>Convertimos tus ideas en páginas web y aplicaciones que funcionan</h1>
-      <p>Desarrollamos sitios web y aplicaciones a medida, incluyendo soluciones robustas con Laravel, pensadas para ayudarte a captar clientes y ordenar tu negocio.</p>
+      <p>Desarrollamos sitios web y aplicaciones a medida para negocios de Cúcuta, Los Patios y Norte de Santander, incluyendo soluciones robustas con Laravel, pensadas para ayudarte a captar clientes y ordenar tu negocio.</p>
       <div class="hero-actions">
         <a href="<?= e(site_url('/portafolio')) ?>" class="btn btn-primary">Ver portafolio</a>
         <a href="<?= e(site_url('/contacto')) ?>" class="btn btn-outline" style="border-color:#ffffff33;color:#fff;">Cotiza tu proyecto</a>

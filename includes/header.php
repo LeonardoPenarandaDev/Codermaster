@@ -29,6 +29,8 @@ $currentUrlPath = $currentPath === '' ? '/' : '/' . $currentPath;
 <meta property="og:url" content="<?= e(site_absolute_url($currentUrlPath)) ?>">
 <meta property="og:locale" content="es_CO">
 <meta name="twitter:card" content="summary">
+<meta name="geo.region" content="CO-NSA">
+<meta name="geo.placename" content="Cúcuta, Norte de Santander, Colombia">
 <link rel="canonical" href="<?= e(site_absolute_url($currentUrlPath)) ?>">
 <script type="application/ld+json">
 <?= json_encode([
@@ -38,7 +40,18 @@ $currentUrlPath = $currentPath === '' ? '/' : '/' . $currentPath;
   'url' => site_absolute_url('/'),
   'description' => $pageDescription,
   'telephone' => '+57 315 619 1056',
-  'areaServed' => 'CO',
+  'address' => [
+    '@type' => 'PostalAddress',
+    'addressLocality' => 'Cúcuta',
+    'addressRegion' => 'Norte de Santander',
+    'addressCountry' => 'CO'
+  ],
+  'areaServed' => [
+    ['@type' => 'City', 'name' => 'Cúcuta'],
+    ['@type' => 'City', 'name' => 'Los Patios'],
+    ['@type' => 'City', 'name' => 'Villa del Rosario'],
+    ['@type' => 'AdministrativeArea', 'name' => 'Norte de Santander']
+  ],
   'priceRange' => '$$'
 ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?>
 </script>

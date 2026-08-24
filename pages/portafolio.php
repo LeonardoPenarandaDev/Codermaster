@@ -1,6 +1,6 @@
 <?php
-$pageTitle = 'Portafolio';
-$pageDescription = 'Conoce algunos de los proyectos y aplicaciones que hemos desarrollado.';
+$pageTitle = 'Portafolio de Páginas Web en Cúcuta';
+$pageDescription = 'Conoce algunos de los proyectos y aplicaciones web que hemos desarrollado para negocios en Cúcuta, Los Patios y Norte de Santander.';
 require __DIR__ . '/../includes/header.php';
 
 $proyectos = require __DIR__ . '/../data/proyectos.php';

@@ -1,6 +1,6 @@
 <?php
-$pageTitle = 'Precios';
-$pageDescription = 'Planes en pesos colombianos para páginas web y aplicaciones a medida. Cotiza tu proyecto con CoderMaster en Colombia.';
+$pageTitle = 'Precios de Páginas Web en Cúcuta';
+$pageDescription = 'Planes en pesos colombianos para páginas web y aplicaciones a medida. Cotiza tu proyecto con CoderMaster en Cúcuta, Los Patios y Norte de Santander.';
 require __DIR__ . '/../includes/header.php';
 ?>
 

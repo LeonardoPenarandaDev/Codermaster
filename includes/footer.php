@@ -3,7 +3,7 @@
   <div class="container footer-inner">
     <div class="footer-col">
       <a href="<?= e(site_url('/')) ?>" class="logo">Coder<span>Master</span></a>
-      <p>Diseño de páginas web y aplicaciones a medida para impulsar tu negocio.</p>
+      <p>Diseño de páginas web y aplicaciones a medida para impulsar tu negocio en Cúcuta, Los Patios y Norte de Santander.</p>
     </div>
     <div class="footer-col">
       <h4>Navegación</h4>

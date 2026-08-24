@@ -1,6 +1,6 @@
 <?php
-$pageTitle = 'Nosotros';
-$pageDescription = 'Conoce a CoderMaster, especialistas en diseño web y desarrollo de aplicaciones a medida para negocios en Colombia.';
+$pageTitle = 'Sobre Nosotros';
+$pageDescription = 'Conoce a CoderMaster, especialistas en diseño web y desarrollo de aplicaciones a medida para negocios en Cúcuta, Los Patios y Norte de Santander.';
 require __DIR__ . '/../includes/header.php';
 ?>
 

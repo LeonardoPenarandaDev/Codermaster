@@ -1,6 +1,6 @@
 <?php
-$pageTitle = 'Contacto';
-$pageDescription = 'Solicita una cotización de diseño web o desarrollo de aplicaciones en Colombia. Cuéntanos sobre tu proyecto.';
+$pageTitle = 'Contacto - Diseño Web en Cúcuta';
+$pageDescription = 'Solicita una cotización de diseño web o desarrollo de aplicaciones en Cúcuta, Los Patios y Norte de Santander. Cuéntanos sobre tu proyecto.';
 require __DIR__ . '/../includes/header.php';
 
 $status = $_GET['status'] ?? '';
@@ -49,6 +49,7 @@ $status = $_GET['status'] ?? '';
         <li><strong>Email:</strong><br>contacto@codermaster.com</li>
         <li><strong>Teléfono:</strong><br><a href="tel:+573156191056">+57 315 619 1056</a></li>
         <li><strong>Horario de atención:</strong><br>Lunes a viernes, 9:00 a 18:00</li>
+        <li><strong>Zona de cobertura:</strong><br>Cúcuta, Los Patios y Norte de Santander</li>
       </ul>
     </aside>
   </div>

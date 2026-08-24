@@ -1,6 +1,6 @@
 <?php
-$pageTitle = 'Servicios';
-$pageDescription = 'Diseño de páginas web, aplicaciones con Laravel, tiendas online, mantenimiento y soporte para negocios en Colombia.';
+$pageTitle = 'Servicios de Diseño Web en Cúcuta y Norte de Santander';
+$pageDescription = 'Diseño de páginas web, aplicaciones con Laravel, tiendas online, mantenimiento y soporte para negocios en Cúcuta, Los Patios y Norte de Santander.';
 require __DIR__ . '/../includes/header.php';
 
 $servicios = [
