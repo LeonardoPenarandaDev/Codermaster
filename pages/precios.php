@@ -64,6 +64,60 @@ require __DIR__ . '/../includes/header.php';
   </p>
 </section>
 
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Tienda online</span>
+      <h2>Planes de E-commerce</h2>
+      <p>Precios de referencia para crear tu tienda en línea, desde un catálogo simple hasta una plataforma con pagos y varios vendedores.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <h3>E-commerce Básico</h3>
+        <p style="color:var(--color-muted); font-size:0.9rem;">Catálogo en línea con pedidos por WhatsApp.</p>
+        <div class="price">Desde $1.500.000 <span>COP</span></div>
+        <ul>
+          <li>Catálogo de productos ilimitado</li>
+          <li>Carrito y checkout por WhatsApp</li>
+          <li>Diseño responsive a medida</li>
+          <li>1 ronda de ajustes</li>
+        </ul>
+        <a href="<?= e(site_url('/contacto')) ?>" class="btn btn-outline">Cotizar este plan</a>
+      </div>
+
+      <div class="price-card featured">
+        <span class="badge">Más elegido</span>
+        <h3>E-commerce Estándar</h3>
+        <p style="color:var(--color-muted); font-size:0.9rem;">Tienda completa con pagos en línea.</p>
+        <div class="price">Desde $2.500.000 <span>COP</span></div>
+        <ul>
+          <li>Todo lo del plan Básico</li>
+          <li>Pasarela de pagos (Wompi, PayU o Mercado Pago)</li>
+          <li>Panel de administración de pedidos e inventario</li>
+          <li>2 rondas de ajustes</li>
+        </ul>
+        <a href="<?= e(site_url('/contacto')) ?>" class="btn btn-primary">Cotizar este plan</a>
+      </div>
+
+      <div class="price-card">
+        <h3>E-commerce Avanzado</h3>
+        <p style="color:var(--color-muted); font-size:0.9rem;">Plataformas con múltiples vendedores o integraciones.</p>
+        <div class="price">Cotización <span>personalizada</span></div>
+        <ul>
+          <li>Todo lo del plan Estándar</li>
+          <li>Multi-vendedor</li>
+          <li>Facturación electrónica (DIAN), envíos y cupones</li>
+          <li>Soporte prioritario</li>
+        </ul>
+        <a href="<?= e(site_url('/contacto')) ?>" class="btn btn-outline">Solicitar cotización</a>
+      </div>
+    </div>
+    <p class="text-center" style="color:var(--color-muted); margin-top:24px;">
+      También disponible en modalidad mensual desde $180.000 COP, con hosting, copias de seguridad y soporte incluido.
+    </p>
+  </div>
+</section>
+
 <section class="section" style="background:var(--color-bg);">
   <div class="container">
     <div class="section-head">
