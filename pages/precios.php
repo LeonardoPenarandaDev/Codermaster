@@ -81,6 +81,7 @@ require __DIR__ . '/../includes/header.php';
           <li>Carrito y checkout por WhatsApp</li>
           <li>Diseño responsive a medida</li>
           <li>1 ronda de ajustes</li>
+          <li>Tiempo estimado: 1-2 semanas</li>
         </ul>
         <a href="<?= e(site_url('/contacto')) ?>" class="btn btn-outline">Cotizar este plan</a>
       </div>
@@ -95,6 +96,7 @@ require __DIR__ . '/../includes/header.php';
           <li>Pasarela de pagos (Wompi, PayU o Mercado Pago)</li>
           <li>Panel de administración de pedidos e inventario</li>
           <li>2 rondas de ajustes</li>
+          <li>Tiempo estimado: 3-5 semanas</li>
         </ul>
         <a href="<?= e(site_url('/contacto')) ?>" class="btn btn-primary">Cotizar este plan</a>
       </div>
@@ -108,10 +110,14 @@ require __DIR__ . '/../includes/header.php';
           <li>Multi-vendedor</li>
           <li>Facturación electrónica (DIAN), envíos y cupones</li>
           <li>Soporte prioritario</li>
+          <li>Tiempo estimado: 2-4 meses</li>
         </ul>
         <a href="<?= e(site_url('/contacto')) ?>" class="btn btn-outline">Solicitar cotización</a>
       </div>
     </div>
+    <p class="text-center" style="color:var(--color-muted); margin-top:8px; font-size:0.85rem;">
+      Los tiempos son estimados y pueden variar según la cantidad de productos, el nivel de personalización del diseño y la disponibilidad de contenido (fotos, textos) por parte del cliente.
+    </p>
     <p class="text-center" style="color:var(--color-muted); margin-top:24px;">
       También disponible en modalidad mensual desde $180.000 COP, con hosting, copias de seguridad y soporte incluido.
     </p>
