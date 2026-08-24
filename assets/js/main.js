@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   var revealTargets = document.querySelectorAll(
-    '.grid-cards .card, .project-card, .price-card, .cta, .contact-info, .contact-form'
+    '.grid-cards .card, .project-card, .price-card, .client-card, .cta, .contact-info, .contact-form'
   );
   if (revealTargets.length && 'IntersectionObserver' in window) {
     var observer = new IntersectionObserver(
