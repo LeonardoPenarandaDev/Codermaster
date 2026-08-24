@@ -14,7 +14,7 @@ require __DIR__ . '/../includes/header.php';
 <section class="section">
   <div class="container about-grid">
     <div>
-      <span class="eyebrow" style="color:var(--color-primary); font-weight:600; text-transform:uppercase; font-size:0.85rem; letter-spacing:0.08em;">Quiénes somos</span>
+      <span class="eyebrow">Quiénes somos</span>
       <h2 style="margin: 12px 0 16px;">Un emprendimiento enfocado en resultados reales</h2>
       <p style="color:var(--color-muted); margin-bottom: 16px;">
         CoderMaster nace con el objetivo de acercar soluciones de desarrollo web y de software a medida a negocios
@@ -41,22 +41,22 @@ require __DIR__ . '/../includes/header.php';
     </div>
     <div class="values-grid">
       <div class="card">
-        <div class="icon">🎯</div>
+        <div class="icon"><?= icon('target') ?></div>
         <h3>Soluciones a medida</h3>
         <p>Cada proyecto se diseña según las necesidades reales del cliente, sin plantillas genéricas.</p>
       </div>
       <div class="card">
-        <div class="icon">💬</div>
+        <div class="icon"><?= icon('message') ?></div>
         <h3>Comunicación cercana</h3>
         <p>Acompañamiento directo durante todo el proyecto, sin intermediarios.</p>
       </div>
       <div class="card">
-        <div class="icon">🛠️</div>
+        <div class="icon"><?= icon('wrench') ?></div>
         <h3>Buenas prácticas</h3>
         <p>Código ordenado y mantenible, usando tecnologías como Laravel y PHP.</p>
       </div>
       <div class="card">
-        <div class="icon">🤝</div>
+        <div class="icon"><?= icon('shield') ?></div>
         <h3>Soporte post-entrega</h3>
         <p>El trabajo no termina con la entrega: ofrecemos mantenimiento y mejoras continuas.</p>
       </div>

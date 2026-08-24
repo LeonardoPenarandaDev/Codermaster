@@ -32,7 +32,7 @@ $pageDescription = $proyecto['resumen'];
 require __DIR__ . '/../includes/header.php';
 ?>
 
-<section class="page-hero" style="background: linear-gradient(135deg, <?= e($proyecto['color']) ?>, #0f172a);">
+<section class="page-hero" style="background: linear-gradient(135deg, <?= e($proyecto['color']) ?>, var(--color-dark));">
   <div class="container">
     <h1><?= e($proyecto['titulo']) ?></h1>
     <p><?= e($proyecto['resumen']) ?></p>

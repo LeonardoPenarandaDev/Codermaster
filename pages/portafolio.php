@@ -17,7 +17,7 @@ $proyectos = require __DIR__ . '/../data/proyectos.php';
   <div class="container grid-cards">
     <?php foreach ($proyectos as $p): ?>
     <a href="<?= e(site_url('/portafolio/' . $p['slug'])) ?>" class="project-card">
-      <div class="project-thumb" style="background: linear-gradient(135deg, <?= e($p['color']) ?>, #0f172a);">
+      <div class="project-thumb" style="background: linear-gradient(135deg, <?= e($p['color']) ?>, var(--color-dark));">
         <span><?= e(mb_strtoupper(mb_substr($p['titulo'], 0, 2))) ?></span>
       </div>
       <div class="project-info">

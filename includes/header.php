@@ -47,7 +47,7 @@ $currentUrlPath = $currentPath === '' ? '/' : '/' . $currentPath;
 <link rel="apple-touch-icon" href="<?= e(site_url('/assets/img/logo.png')) ?>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="<?= e(site_url('/assets/css/style.css')) ?>">
 </head>
 <body>

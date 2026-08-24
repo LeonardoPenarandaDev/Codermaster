@@ -73,35 +73,35 @@ require __DIR__ . '/../includes/header.php';
     </div>
     <div class="grid-cards">
       <div class="card">
-        <div class="icon">🎓</div>
+        <div class="icon"><?= icon('graduation') ?></div>
         <h3>Gestión escolar</h3>
         <p>Matrículas, calificaciones, asistencia y comunicación con acudientes.</p>
         <div class="price-tag">Desde $3.500.000 <span>COP</span></div>
         <div class="price-alt">o $1.000.000<span>/año</span> con hosting y soporte en nuestro servidor</div>
       </div>
       <div class="card">
-        <div class="icon">💳</div>
+        <div class="icon"><?= icon('card') ?></div>
         <h3>Pagos de mensualidades</h3>
         <p>Estados de cuenta, control de mora y recordatorios de pago.</p>
         <div class="price-tag">Desde $2.500.000 <span>COP</span></div>
         <div class="price-alt">o desde $180.000<span>/mes</span> con hosting y soporte</div>
       </div>
       <div class="card">
-        <div class="icon">🅿️</div>
+        <div class="icon"><?= icon('parking') ?></div>
         <h3>Parqueaderos</h3>
         <p>Entradas, salidas, tarifas por tiempo y mensualidades.</p>
         <div class="price-tag">Desde $2.800.000 <span>COP</span></div>
         <div class="price-alt">o desde $200.000<span>/mes</span> con hosting y soporte</div>
       </div>
       <div class="card">
-        <div class="icon">🏢</div>
+        <div class="icon"><?= icon('building') ?></div>
         <h3>Conjuntos residenciales</h3>
         <p>Cuotas de administración, PQRs y reserva de zonas comunes.</p>
         <div class="price-tag">Desde $3.500.000 <span>COP</span></div>
         <div class="price-alt">o desde $250.000<span>/mes</span> con hosting y soporte</div>
       </div>
       <div class="card">
-        <div class="icon">🛒</div>
+        <div class="icon"><?= icon('cart') ?></div>
         <h3>Tienda online / E-commerce</h3>
         <p>Catálogo, carrito de compras, pagos en línea y panel de pedidos.</p>
         <div class="price-tag">Desde $2.200.000 <span>COP</span></div>

@@ -37,17 +37,17 @@ $destacados = array_slice(array_filter($proyectos, fn($p) => $p['destacado']), 0
     </div>
     <div class="grid-cards">
       <div class="card">
-        <div class="icon">🌐</div>
+        <div class="icon"><?= icon('globe') ?></div>
         <h3>Páginas web</h3>
         <p>Sitios corporativos y landing pages con diseño propio, optimizados para convertir visitas en clientes.</p>
       </div>
       <div class="card">
-        <div class="icon">⚙️</div>
+        <div class="icon"><?= icon('code') ?></div>
         <h3>Aplicaciones con Laravel</h3>
         <p>Sistemas a medida: inventarios, reservas, paneles administrativos y más, con Laravel y buenas prácticas.</p>
       </div>
       <div class="card">
-        <div class="icon">🛒</div>
+        <div class="icon"><?= icon('cart') ?></div>
         <h3>Tiendas online</h3>
         <p>E-commerce completos con carrito, pagos y panel de administración para gestionar tus productos.</p>
       </div>
@@ -67,7 +67,7 @@ $destacados = array_slice(array_filter($proyectos, fn($p) => $p['destacado']), 0
     <div class="grid-cards">
       <?php foreach ($destacados as $p): ?>
       <a href="<?= e(site_url('/portafolio/' . $p['slug'])) ?>" class="project-card">
-        <div class="project-thumb" style="background: linear-gradient(135deg, <?= e($p['color']) ?>, #0f172a);">
+        <div class="project-thumb" style="background: linear-gradient(135deg, <?= e($p['color']) ?>, var(--color-dark));">
           <span><?= e(mb_strtoupper(mb_substr($p['titulo'], 0, 2))) ?></span>
         </div>
         <div class="project-info">
