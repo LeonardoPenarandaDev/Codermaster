@@ -5,6 +5,7 @@ require __DIR__ . '/../includes/header.php';
 
 $proyectos = require __DIR__ . '/../data/proyectos.php';
 $destacados = array_slice(array_filter($proyectos, fn($p) => $p['destacado']), 0, 3);
+$clientes = require __DIR__ . '/../data/clientes.php';
 ?>
 
 <section class="hero">
@@ -83,6 +84,30 @@ $destacados = array_slice(array_filter($proyectos, fn($p) => $p['destacado']), 0
 <?php endif; ?>
 
 <section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Confianza</span>
+      <h2>Empresas que han confiado en nosotros</h2>
+      <p>Instituciones y negocios para los que hemos desarrollado páginas web y sistemas a medida.</p>
+    </div>
+    <div class="clients-grid">
+      <?php foreach ($clientes as $c): ?>
+        <?php if ($c['logo']): ?>
+        <a class="client-card" href="<?= e($c['enlace']) ?>" title="<?= e($c['nombre']) ?>">
+          <img src="<?= e(site_url('/assets/img/clientes/' . $c['logo'])) ?>" alt="<?= e($c['nombre']) ?>" loading="lazy">
+        </a>
+        <?php else: ?>
+        <div class="client-card client-card-placeholder" title="<?= e($c['nombre']) ?>">
+          <span class="client-initial"><?= e(mb_strtoupper(mb_substr($c['nombre'], 0, 1))) ?></span>
+          <span class="client-name"><?= e($c['nombre']) ?></span>
+        </div>
+        <?php endif; ?>
+      <?php endforeach; ?>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
   <div class="container">
     <div class="cta">
       <h2>¿Tienes un proyecto en mente?</h2>
