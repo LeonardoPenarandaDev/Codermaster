@@ -78,9 +78,15 @@ $clientes = require __DIR__ . '/../data/clientes.php';
     <div class="grid-cards">
       <?php foreach ($destacados as $p): ?>
       <a href="<?= e(page_url('/portafolio/' . $p['slug'])) ?>" class="project-card">
+        <?php if (!empty($p['logo'])): ?>
+        <div class="project-thumb has-logo">
+          <img src="<?= e(site_url('/assets/img/clientes/' . $p['logo'])) ?>" alt="<?= e(tv($p['titulo'])) ?>" loading="lazy">
+        </div>
+        <?php else: ?>
         <div class="project-thumb" style="background: linear-gradient(135deg, <?= e($p['color']) ?>, var(--color-dark));">
           <span><?= e(mb_strtoupper(mb_substr(tv($p['titulo']), 0, 2))) ?></span>
         </div>
+        <?php endif; ?>
         <div class="project-info">
           <h3><?= e(tv($p['titulo'])) ?></h3>
           <p><?= e(tv($p['resumen'])) ?></p>
