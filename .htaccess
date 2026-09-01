@@ -2,6 +2,17 @@ RewriteEngine On
 
 Options -Indexes
 
+# Version en ingles: /en -> Inicio en ingles
+RewriteRule ^en/?$ pages/index.php?lang=en [L,QSA]
+
+# Version en ingles del detalle de proyecto: /en/portafolio/mi-proyecto
+RewriteRule ^en/portafolio/([a-zA-Z0-9-]+)/?$ pages/portafolio-detalle.php?slug=$1&lang=en [L,QSA]
+
+# Version en ingles de las demas paginas: /en/servicios, /en/precios, etc.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^en/([a-z-]+)/?$ pages/$1.php?lang=en [L,QSA,NC]
+
 # Raiz -> Inicio
 RewriteRule ^$ pages/index.php [L]
 

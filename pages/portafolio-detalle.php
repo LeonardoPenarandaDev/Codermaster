@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../includes/functions.php';
+require_once __DIR__ . '/../includes/lang.php';
 
 $proyectos = require __DIR__ . '/../data/proyectos.php';
 $slug = $_GET['slug'] ?? '';
@@ -14,28 +14,31 @@ foreach ($proyectos as $p) {
 
 if (!$proyecto) {
     http_response_code(404);
-    $pageTitle = 'Proyecto no encontrado';
+    $pageTitle = tv(['es' => 'Proyecto no encontrado', 'en' => 'Project not found']);
     require __DIR__ . '/../includes/header.php';
     ?>
     <section class="section container text-center">
-      <h1>Proyecto no encontrado</h1>
-      <p style="color:var(--color-muted); margin: 16px 0 28px;">El proyecto que buscas no existe o fue movido.</p>
-      <a href="<?= e(site_url('/portafolio')) ?>" class="btn btn-primary">Volver al portafolio</a>
+      <h1><?= tv(['es' => 'Proyecto no encontrado', 'en' => 'Project not found']) ?></h1>
+      <p style="color:var(--color-muted); margin: 16px 0 28px;"><?= tv([
+        'es' => 'El proyecto que buscas no existe o fue movido.',
+        'en' => 'The project you are looking for does not exist or has been moved.',
+      ]) ?></p>
+      <a href="<?= e(page_url('/portafolio')) ?>" class="btn btn-primary"><?= tv(['es' => 'Volver al portafolio', 'en' => 'Back to portfolio']) ?></a>
     </section>
     <?php
     require __DIR__ . '/../includes/footer.php';
     exit;
 }
 
-$pageTitle = $proyecto['titulo'];
-$pageDescription = $proyecto['resumen'];
+$pageTitle = tv($proyecto['titulo']);
+$pageDescription = tv($proyecto['resumen']);
 require __DIR__ . '/../includes/header.php';
 ?>
 
 <section class="page-hero" style="background: linear-gradient(135deg, <?= e($proyecto['color']) ?>, var(--color-dark));">
   <div class="container">
-    <h1><?= e($proyecto['titulo']) ?></h1>
-    <p><?= e($proyecto['resumen']) ?></p>
+    <h1><?= e(tv($proyecto['titulo'])) ?></h1>
+    <p><?= e(tv($proyecto['resumen'])) ?></p>
   </div>
 </section>
 
@@ -46,10 +49,10 @@ require __DIR__ . '/../includes/header.php';
         <span class="tag"><?= e($tech) ?></span>
       <?php endforeach; ?>
     </div>
-    <p><?= nl2br(e($proyecto['descripcion'])) ?></p>
+    <p><?= nl2br(e(tv($proyecto['descripcion']))) ?></p>
     <div>
-      <a href="<?= e($proyecto['enlace']) ?>" class="btn btn-primary" target="_blank" rel="noopener">Ver proyecto</a>
-      <a href="<?= e(site_url('/portafolio')) ?>" class="btn btn-outline">Volver al portafolio</a>
+      <a href="<?= e($proyecto['enlace']) ?>" class="btn btn-primary" target="_blank" rel="noopener"><?= tv(['es' => 'Ver proyecto', 'en' => 'View project']) ?></a>
+      <a href="<?= e(page_url('/portafolio')) ?>" class="btn btn-outline"><?= tv(['es' => 'Volver al portafolio', 'en' => 'Back to portfolio']) ?></a>
     </div>
   </div>
 </section>
