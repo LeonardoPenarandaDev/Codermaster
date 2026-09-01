@@ -17,9 +17,15 @@ $proyectos = require __DIR__ . '/../data/proyectos.php';
   <div class="container grid-cards">
     <?php foreach ($proyectos as $p): ?>
     <a href="<?= e(site_url('/portafolio/' . $p['slug'])) ?>" class="project-card">
+      <?php if (!empty($p['logo'])): ?>
+      <div class="project-thumb has-logo">
+        <img src="<?= e(site_url('/assets/img/clientes/' . $p['logo'])) ?>" alt="<?= e($p['titulo']) ?>" loading="lazy">
+      </div>
+      <?php else: ?>
       <div class="project-thumb" style="background: linear-gradient(135deg, <?= e($p['color']) ?>, var(--color-dark));">
         <span><?= e(mb_strtoupper(mb_substr($p['titulo'], 0, 2))) ?></span>
       </div>
+      <?php endif; ?>
       <div class="project-info">
         <h3><?= e($p['titulo']) ?></h3>
         <p><?= e($p['resumen']) ?></p>

@@ -10,6 +10,7 @@ return [
         'color'       => '#4f46e5',
         'enlace'      => '#',
         'destacado'   => true,
+        'logo'        => null,
     ],
     [
         'slug'        => 'pagos-mensualidades-institutos',
@@ -20,6 +21,7 @@ return [
         'color'       => '#16a34a',
         'enlace'      => '#',
         'destacado'   => true,
+        'logo'        => null,
     ],
     [
         'slug'        => 'software-parqueaderos',
@@ -30,6 +32,7 @@ return [
         'color'       => '#0ea5e9',
         'enlace'      => '#',
         'destacado'   => false,
+        'logo'        => null,
     ],
     [
         'slug'        => 'gestion-conjuntos-residenciales',
@@ -40,6 +43,7 @@ return [
         'color'       => '#8b5cf6',
         'enlace'      => '#',
         'destacado'   => false,
+        'logo'        => null,
     ],
     [
         'slug'        => 'tienda-online-ecommerce',
@@ -50,6 +54,7 @@ return [
         'color'       => '#ec4899',
         'enlace'      => '#',
         'destacado'   => true,
+        'logo'        => null,
     ],
     [
         'slug'        => 'sistema-digiturnos',
@@ -60,6 +65,7 @@ return [
         'color'       => '#14b8a6',
         'enlace'      => '#',
         'destacado'   => false,
+        'logo'        => null,
     ],
     [
         'slug'        => 'colegio-emunah',
@@ -70,6 +76,7 @@ return [
         'color'       => '#f97316',
         'enlace'      => 'https://www.emunah.edu.co/',
         'destacado'   => false,
+        'logo'        => 'emunah.png',
     ],
     [
         'slug'        => 'metalicas-juseph',
@@ -80,6 +87,7 @@ return [
         'color'       => '#dc2626',
         'enlace'      => 'https://www.metalicasjuseph.com/',
         'destacado'   => false,
+        'logo'        => 'metalicasjuseph.png',
     ],
     [
         'slug'        => 'world-go-colombia',
@@ -90,5 +98,6 @@ return [
         'color'       => '#2563eb',
         'enlace'      => 'https://www.worldgocolombia.com.co/',
         'destacado'   => false,
+        'logo'        => 'worldgocolombia.png',
     ],
 ];
