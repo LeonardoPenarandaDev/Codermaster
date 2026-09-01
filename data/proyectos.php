@@ -19,6 +19,23 @@ return [
         'logo'        => null,
     ],
     [
+        'slug'        => 'aulamaster',
+        'titulo'      => ['es' => 'AulaMaster — Plataforma para Instituciones Educativas', 'en' => 'AulaMaster — Educational Institution Platform'],
+        'resumen'     => [
+            'es' => 'Plataforma propia en desarrollo para colegios e institutos: matrículas, calificaciones, asistencia, pagos y comunicación con acudientes.',
+            'en' => 'Our own platform in development for schools and institutes: enrollment, grades, attendance, payments and communication with parents.',
+        ],
+        'descripcion' => [
+            'es' => "AulaMaster es nuestra propia plataforma en desarrollo para la administración integral de colegios e institutos educativos.\n\nReúne en un solo sistema la matrícula y hoja de vida del estudiante, calificaciones y boletines, control de asistencia, gestión de pagos y mensualidades, y un canal de comunicación directo con acudientes. Está pensada para ofrecerse como plan anual por número de estudiantes, con hosting y soporte de CoderMaster incluidos.\n\nActualmente disponible en ambiente de pruebas.",
+            'en' => "AulaMaster is our own platform in development for the comprehensive administration of schools and educational institutes.\n\nIt brings together student enrollment and records, grades and report cards, attendance control, payment and tuition management, and a direct communication channel with parents, all in one system. It is designed to be offered as an annual plan based on student count, with hosting and support from CoderMaster included.\n\nCurrently available in a testing environment.",
+        ],
+        'tecnologias' => ['Laravel', 'MySQL', 'Tailwind CSS'],
+        'color'       => '#0891b2',
+        'enlace'      => 'https://aulamastertest.codermaster.com.co',
+        'destacado'   => true,
+        'logo'        => null,
+    ],
+    [
         'slug'        => 'pagos-mensualidades-institutos',
         'titulo'      => ['es' => 'Sistema de Pagos de Mensualidades', 'en' => 'Monthly Tuition Payment System'],
         'resumen'     => [
