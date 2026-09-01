@@ -16,7 +16,7 @@ return [
         'color'       => '#4f46e5',
         'enlace'      => '#',
         'destacado'   => true,
-        'logo'        => null,
+        'logo'        => 'gestionescolar.png',
     ],
     [
         'slug'        => 'aulamaster',
@@ -33,7 +33,7 @@ return [
         'color'       => '#0891b2',
         'enlace'      => 'https://aulamastertest.codermaster.com.co',
         'destacado'   => true,
-        'logo'        => null,
+        'logo'        => 'aulamaster.png',
     ],
     [
         'slug'        => 'pagos-mensualidades-institutos',
@@ -50,11 +50,11 @@ return [
         'color'       => '#16a34a',
         'enlace'      => '#',
         'destacado'   => true,
-        'logo'        => null,
+        'logo'        => 'sistemaspagos.png',
     ],
     [
         'slug'        => 'software-parqueaderos',
-        'titulo'      => ['es' => 'Software para Parqueaderos', 'en' => 'Parking Lot Software'],
+        'titulo'      => ['es' => 'ParkMaster — Software para Parqueaderos', 'en' => 'ParkMaster — Parking Lot Software'],
         'resumen'     => [
             'es' => 'Control de entradas, salidas y tarifas de parqueadero, con mensualidades y reportes de ocupación en tiempo real.',
             'en' => 'Parking lot entry, exit and rate control, with monthly passes and real-time occupancy reports.',
@@ -67,11 +67,11 @@ return [
         'color'       => '#0ea5e9',
         'enlace'      => '#',
         'destacado'   => false,
-        'logo'        => null,
+        'logo'        => 'parkmaster.png',
     ],
     [
         'slug'        => 'gestion-conjuntos-residenciales',
-        'titulo'      => ['es' => 'Gestión de Conjuntos Residenciales', 'en' => 'Residential Complex Management'],
+        'titulo'      => ['es' => 'ResidentialMaster — Gestión de Conjuntos Residenciales', 'en' => 'ResidentialMaster — Residential Complex Management'],
         'resumen'     => [
             'es' => 'Software de propiedad horizontal: cuotas de administración, PQRs, reserva de zonas comunes y comunicados.',
             'en' => 'Condominium management software: HOA fees, resident requests, common area bookings and announcements.',
@@ -84,11 +84,11 @@ return [
         'color'       => '#8b5cf6',
         'enlace'      => '#',
         'destacado'   => false,
-        'logo'        => null,
+        'logo'        => 'residencialmaster.png',
     ],
     [
         'slug'        => 'tienda-online-ecommerce',
-        'titulo'      => ['es' => 'Tienda Online / E-commerce', 'en' => 'Online Store / E-commerce'],
+        'titulo'      => ['es' => 'EcomMaster — Tienda Online / E-commerce', 'en' => 'EcomMaster — Online Store / E-commerce'],
         'resumen'     => [
             'es' => 'Plataforma de comercio electrónico con catálogo, carrito de compras y pagos en línea.',
             'en' => 'E-commerce platform with product catalog, shopping cart and online payments.',
@@ -101,11 +101,11 @@ return [
         'color'       => '#ec4899',
         'enlace'      => '#',
         'destacado'   => true,
-        'logo'        => null,
+        'logo'        => 'ecommaster.png',
     ],
     [
         'slug'        => 'sistema-digiturnos',
-        'titulo'      => ['es' => 'Sistema de Digiturnos', 'en' => 'Digital Queue System'],
+        'titulo'      => ['es' => 'DigiTurnos — Sistema de Turnos Digitales', 'en' => 'DigiTurnos — Digital Queue System'],
         'resumen'     => [
             'es' => 'Gestión de turnos y fila de espera en tiempo real, con pantalla de llamado para atención al público.',
             'en' => 'Real-time queue and waiting-line management, with a call screen for public service desks.',
@@ -118,7 +118,7 @@ return [
         'color'       => '#14b8a6',
         'enlace'      => '#',
         'destacado'   => false,
-        'logo'        => null,
+        'logo'        => 'digiturnos.png',
     ],
     [
         'slug'        => 'colegio-emunah',
