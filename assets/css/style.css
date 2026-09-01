@@ -671,6 +671,7 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 720px) {
+  .logo-img { height: 30px; }
   .nav-toggle { display: flex; }
   .main-nav {
     position: fixed;
@@ -692,6 +693,10 @@ h1, h2, h3, h4 {
   .footer-inner { grid-template-columns: 1fr; }
   .section { padding: 56px 0; }
   .clients-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 400px) {
+  .logo-img { height: 24px; }
 }
 
 /* ===== WhatsApp Float Button ===== */
