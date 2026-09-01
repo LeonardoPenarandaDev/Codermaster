@@ -124,6 +124,69 @@ require __DIR__ . '/../includes/header.php';
   </div>
 </section>
 
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Instituciones educativas</span>
+      <h2>Planes de Administración de Colegios</h2>
+      <p>Plataforma para matrículas, calificaciones, asistencia y comunicación con acudientes. Planes anuales según el número de estudiantes de tu institución.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <h3>Colegios Básico</h3>
+        <p style="color:var(--color-muted); font-size:0.9rem;">Para instituciones pequeñas que están iniciando su transformación digital.</p>
+        <div class="price">Desde $950.000 <span>COP / año</span></div>
+        <ul>
+          <li>Hasta 200 estudiantes</li>
+          <li>Matrículas y calificaciones en línea</li>
+          <li>Control de asistencia</li>
+          <li>Portal para acudientes</li>
+          <li>Soporte incluido</li>
+          <li>Tiempo estimado: 3-4 semanas</li>
+        </ul>
+        <a href="<?= e(site_url('/contacto')) ?>" class="btn btn-outline">Cotizar este plan</a>
+      </div>
+
+      <div class="price-card featured">
+        <span class="badge">Más elegido</span>
+        <h3>Colegios Estándar</h3>
+        <p style="color:var(--color-muted); font-size:0.9rem;">Para colegios en crecimiento que necesitan gestión académica y financiera completa.</p>
+        <div class="price">Desde $1.700.000 <span>COP / año</span></div>
+        <ul>
+          <li>Hasta 600 estudiantes</li>
+          <li>Todo lo del plan Básico</li>
+          <li>Gestión de pagos y mensualidades</li>
+          <li>Comunicados y notificaciones a acudientes</li>
+          <li>Reportes de rendimiento académico</li>
+          <li>Tiempo estimado: 5-7 semanas</li>
+        </ul>
+        <a href="<?= e(site_url('/contacto')) ?>" class="btn btn-primary">Cotizar este plan</a>
+      </div>
+
+      <div class="price-card">
+        <h3>Colegios Premium</h3>
+        <p style="color:var(--color-muted); font-size:0.9rem;">Para instituciones grandes o con varias sedes.</p>
+        <div class="price">Cotización <span>personalizada</span></div>
+        <ul>
+          <li>Más de 600 estudiantes</li>
+          <li>Todo lo del plan Estándar</li>
+          <li>Gestión multi-sede</li>
+          <li>Roles y permisos para docentes y coordinadores</li>
+          <li>Integraciones con pasarela de pagos y facturación electrónica</li>
+          <li>Soporte prioritario</li>
+        </ul>
+        <a href="<?= e(site_url('/contacto')) ?>" class="btn btn-outline">Solicitar cotización</a>
+      </div>
+    </div>
+    <p class="text-center" style="color:var(--color-muted); margin-top:8px; font-size:0.85rem;">
+      Los rangos de estudiantes son de referencia; si tu institución está entre dos planes, ajustamos el precio proporcionalmente.
+    </p>
+    <p class="text-center" style="color:var(--color-muted); margin-top:24px;">
+      También disponible en modalidad mensual desde $150.000 COP, con soporte incluido. El hosting se cotiza aparte según el proveedor.
+    </p>
+  </div>
+</section>
+
 <section class="section" style="background:var(--color-bg);">
   <div class="container">
     <div class="section-head">
