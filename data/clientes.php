@@ -26,4 +26,9 @@ return [
         'logo'   =>  'adultos.png',
         'enlace' => site_url('/portafolio/Institucion-Educativa-para-Jovenes-y-Adultos-Emunah'),
     ],
+    [
+        'nombre' => 'Active English Institute',
+        'logo'   =>  'active_english.png',
+        'enlace' => site_url('/portafolio/Active-English-Institute'),
+    ],
 ];
