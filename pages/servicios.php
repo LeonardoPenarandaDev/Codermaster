@@ -8,6 +8,7 @@ $pageDescription = tv([
     'es' => 'Diseño de páginas web, aplicaciones con Laravel, tiendas online, mantenimiento y soporte para negocios en Cúcuta, Los Patios y Norte de Santander.',
     'en' => 'Website design, Laravel applications, online stores, maintenance and support for businesses in Cúcuta, Los Patios and Norte de Santander.',
 ]);
+$hideFooterCta = true;
 require __DIR__ . '/../includes/header.php';
 
 $servicios = [

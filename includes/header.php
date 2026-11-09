@@ -87,19 +87,32 @@ $canonicalAbsUrl = current_lang() === 'en' ? $enAbsUrl : $esAbsUrl;
       <span></span><span></span><span></span>
     </button>
 
-    <nav class="main-nav" id="mainNav">
-      <ul>
-        <li><a href="<?= e(page_url('/')) ?>" class="<?= $currentSegment === 'inicio' ? 'active' : '' ?>"><?= tv(['es' => 'Inicio', 'en' => 'Home']) ?></a></li>
-        <li><a href="<?= e(page_url('/servicios')) ?>" class="<?= $currentSegment === 'servicios' ? 'active' : '' ?>"><?= tv(['es' => 'Servicios', 'en' => 'Services']) ?></a></li>
-        <li><a href="<?= e(page_url('/portafolio')) ?>" class="<?= $currentSegment === 'portafolio' ? 'active' : '' ?>"><?= tv(['es' => 'Portafolio', 'en' => 'Portfolio']) ?></a></li>
-        <li><a href="<?= e(page_url('/precios')) ?>" class="<?= $currentSegment === 'precios' ? 'active' : '' ?>"><?= tv(['es' => 'Precios', 'en' => 'Pricing']) ?></a></li>
-        <li><a href="<?= e(page_url('/nosotros')) ?>" class="<?= $currentSegment === 'nosotros' ? 'active' : '' ?>"><?= tv(['es' => 'Nosotros', 'en' => 'About']) ?></a></li>
-        <li><a href="<?= e(page_url('/contacto')) ?>" class="btn-nav <?= $currentSegment === 'contacto' ? 'active' : '' ?>"><?= tv(['es' => 'Contacto', 'en' => 'Contact']) ?></a></li>
-        <li class="lang-switch">
-          <a href="<?= e($esAbsUrl) ?>" class="lang-link <?= current_lang() === 'es' ? 'active' : '' ?>" hreflang="es">ES</a><span class="lang-sep">/</span><a href="<?= e($enAbsUrl) ?>" class="lang-link <?= current_lang() === 'en' ? 'active' : '' ?>" hreflang="en">EN</a>
-        </li>
+    <nav class="main-nav" id="mainNav" aria-label="<?= e(tv(['es' => 'Navegación principal', 'en' => 'Main navigation'])) ?>">
+      <ul class="nav-links">
+        <?php
+        $navItems = [
+            ['/', 'inicio', tv(['es' => 'Inicio', 'en' => 'Home'])],
+            ['/servicios', 'servicios', tv(['es' => 'Servicios', 'en' => 'Services'])],
+            ['/portafolio', 'portafolio', tv(['es' => 'Portafolio', 'en' => 'Portfolio'])],
+            ['/precios', 'precios', tv(['es' => 'Precios', 'en' => 'Pricing'])],
+            ['/nosotros', 'nosotros', tv(['es' => 'Nosotros', 'en' => 'About'])],
+        ];
+        foreach ($navItems as $i => [$path, $segment, $label]): ?>
+        <li style="--i: <?= $i ?>"><a href="<?= e(page_url($path)) ?>" class="<?= $currentSegment === $segment ? 'active' : '' ?>"<?= $currentSegment === $segment ? ' aria-current="page"' : '' ?>><span class="nav-num" aria-hidden="true">0<?= $i + 1 ?></span><?= e($label) ?></a></li>
+        <?php endforeach; ?>
       </ul>
+      <div class="nav-actions">
+        <div class="lang-switch" role="group" aria-label="<?= e(tv(['es' => 'Idioma', 'en' => 'Language'])) ?>">
+          <a href="<?= e($esAbsUrl) ?>" class="lang-link <?= current_lang() === 'es' ? 'active' : '' ?>" hreflang="es" lang="es">ES</a>
+          <a href="<?= e($enAbsUrl) ?>" class="lang-link <?= current_lang() === 'en' ? 'active' : '' ?>" hreflang="en" lang="en">EN</a>
+        </div>
+        <a href="<?= e(page_url('/contacto')) ?>" class="btn-nav <?= $currentSegment === 'contacto' ? 'active' : '' ?>"<?= $currentSegment === 'contacto' ? ' aria-current="page"' : '' ?>>
+          <?= tv(['es' => 'Cotiza tu web', 'en' => 'Get a quote']) ?>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
     </nav>
   </div>
 </header>
+<div class="nav-backdrop" id="navBackdrop" hidden></div>
 <main>

@@ -5,6 +5,7 @@ $pageDescription = tv([
     'es' => 'Solicita una cotización de diseño web o desarrollo de aplicaciones en Cúcuta, Los Patios y Norte de Santander. Cuéntanos sobre tu proyecto.',
     'en' => 'Request a quote for web design or application development in Cúcuta, Los Patios and Norte de Santander. Tell us about your project.',
 ]);
+$hideFooterCta = true;
 require __DIR__ . '/../includes/header.php';
 
 $status = $_GET['status'] ?? '';
